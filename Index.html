@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Elanchezhiyan P">
+    <meta name="description" content="Free git profile search tool">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Profile</title>
+
+    <!-- CDN URL -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- user defined  -->
+    <link href="mystyle.css" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body>
+    <div class="header-div">Git Profile Search Tool</div>
+    <div class="search-div-container">
+        <form id="myForm" action="" method="post">
+            <div class="git-username-txtbox">
+                <span>Please enter the git profile name : </span>
+                <input type="text" class="git-profile-id" name="profileId" placeholder="Enter the name"
+                    spellcheck="false" required>
+            </div>
+            <div class="btn-functionality">
+                <input type="button" class="btn-search" value="Search" onclick="fnSearchGitProfile()">
+                <input type="button" class="btn-reset" value="Reset" onclick="fnReset()">
+            </div>
+        </form>
+    </div>
+    <div class="result-div-container">
+        <table class="result-1-table">
+            <tr>
+                <th>Source Content</th>
+                <th>Result Content</th>
+            </tr>
+            <tr>
+                <td>Profile Picture</td>
+                <td>
+                    <div class="profile-pic-div-container">
+                        <img src="" alt="no Avatar" class="profile-pic">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td> <span class="git-name"></span></td>
+            </tr>
+            <tr>
+                <td>Git URL</td>
+                <td>
+                    <a class="git-userURL" href="" target="_blank"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>Created at</td>
+                <td>
+                    <span class="git-createdAt"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Updated at</td>
+                <td>
+                    <span class="git-updatedAt"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>User Followers</td>
+                <td>
+                    <span class="git-userFollowers"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>User follows</td>
+                <td><span class="git-userFollowing"></span></td>
+            </tr>
+            <tr>
+                <td>Public Repository</td>
+                <td><span class="git-publicRepos"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="Repos-div-container">
+        <table class="listOfRepos">
+        </table>
+    </div>
+
+
+</body>
+
+</html>

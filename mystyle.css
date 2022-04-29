@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+p {
+    color: #515151;
+    text-align: justify;
+    font-family: "Noto Sans", sans-serif;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.result-1-table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.result-1-table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.profile-pic-div-container img {
+    float: left;
+    padding: 0;
+    width: 60px;
+    height: auto;
+    margin: 12px 0;
+}
+
+.result-div-container,
+.Repos-div-container {
+    display: none;
+    padding: 8px;
+}
+
+.header-div {
+    font-size: 18px;
+    font-weight: 600;
+    align-content: center;
+    color: darkblue;
+    text-align: center;
+    padding: 14px;
+    letter-spacing: 0.5px;
+}
+
+input[type="button"] {
+    height: 26px;
+    border-radius: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 0px 35px;
+    width: 70px;
+    background-color: #e5f3fb;
+    border: solid 1px #037cc2;
+    color: #384350;
+}
+
+input[type="button"]:hover {
+    background-color: #cce7f7;
+    border: solid 1px #037cc2;
+    color: #384350;
+}
+
+.search-div-container input[type="button"] {
+    padding: 2px;
+    margin: 14px 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.git-profile-id {
+    width: 12%;
+    height: 26px;
+    text-align: center;
+    border: solid 1px #037cc2;
+}
+
+.search-div-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.git-username-txtbox span {
+    margin-left: -99px;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
